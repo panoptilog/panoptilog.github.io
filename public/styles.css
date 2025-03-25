@@ -1,0 +1,139 @@
+/* Base styles */
+:root {
+    --bg-color: #f5f5dc;
+    --text-color: #2c2c2c;
+    --link-color: #4a4a4a;
+    --link-hover: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 2rem auto 2rem;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.1rem 0.75rem;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-bottom-style: solid;
+}
+
+.social-link:hover .icon {
+    fill: var(--bg-color);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-color);
+    transition: fill 0.2s ease;
+}
+
+/* Content */
+.content {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Typography */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--link-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+    border-bottom-style: solid;
+}
+
+/* Emphasis */
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .content {
+        padding: 1rem;
+    }
+    
+    .logo {
+        width: 150px;
+        margin: 2rem auto;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Footer */
+.footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+} 
