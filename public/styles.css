@@ -136,4 +136,31 @@ strong {
     text-align: center;
     font-size: 0.9rem;
     color: #666;
-} 
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.license-logo {
+    border: none;
+    transition: opacity 0.2s ease;
+}
+
+.license-logo:hover {
+    opacity: 0.8;
+    border: none;
+}
+
+.footer-logo {
+    margin-top: 0.25rem;
+    width: 64px;
+    height: auto;
+}
